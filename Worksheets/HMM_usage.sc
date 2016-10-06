@@ -12,9 +12,13 @@ val model_1 = HMM(Transition(Array("Hot", "Cold")),
 // Compute the likelihood of a sequence
 model_1.likelihood(List("1", "2", "3", "2", "1"))
 
+// decode the observation sequence on a random HMM
+model_1.decode(List("3", "2", "1"))
+
 
 /*
  * Tutorial for creating an HMM with predefined values of probabs
+ * Model from Jurafsky, Martin figure 6.3 page no. 180
  */
 
 val model_2 = HMM(
@@ -36,3 +40,6 @@ val model_2 = HMM(
 
 // calculate the liklihood of 3 1 3
 model_2.likelihood(List("3", "1", "3"))
+
+// decode a given observation sequence
+model_2.decode(List("3", "1", "3"))
