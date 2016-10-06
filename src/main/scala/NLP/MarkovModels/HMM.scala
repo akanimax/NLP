@@ -34,7 +34,7 @@ object Transition {
   */
 case class Emission (obs_vocab: Observations, noSta: Int, mat: Array[Array[Double]]) {
   require(mat forall (x => x forall (y => y <= 1 && y >= 0)), "Value greater than 1 or -ve") // condition of probability
-  require(mat forall (x => x.sum <= 1), "Condition of Emission")
+  require(mat forall (x => (1 - x.sum) <= 0.001), "Condition of Emission")
 
   // parametrised constructor of the class (Randomly initialize the probability matrix)
   def this(obs_vocab: Observations, noSta: Int) = this(obs_vocab, noSta,
@@ -93,8 +93,32 @@ case class HMM(A: Transition, B: Emission) {
   def printB: String = "\n" + ((B.mat map (x => x mkString " ")) mkString "\n")
 
 
-  // TODO implement the decode function for the HMM
-  def decode(obs_seq: Observations): States = ???
+  /**
+    * @param obs_seq := sequence of observations
+    * @return := sequence of most likely hidden states
+    */
+  def decode(obs_seq: Observations): List[String] = {
+    // funciton to perform the forward computations
+    def viterbi(prev: Array[Double], acc: States, curr: Observations): States = curr match {
+      case List() => acc ++ Array(maxState(prev))
+      case x :: xs => viterbi(Array.range(0, prev.length)
+        .map(y => transform(prev, y, B.obs_vocab.indexOf(x))), acc ++ List(maxState(prev)), xs)
+    }
+
+    def maxState(xs: Array[Double]): String = A.st_labels(xs.zipWithIndex.maxBy(_._1)._2)
+
+    def transform(arr: Array[Double], s_ind: Int, obs_ind: Int): Double= {
+      (for (i <- arr.indices)
+        yield arr(i) * A.mat(i + 1)(s_ind) * B.mat(s_ind)(obs_ind)).max
+    }
+
+    // call the forward function to get the answer
+    val initial = (for {
+      i <- A.mat(0).indices
+    } yield A.mat(0)(i) * B.mat(i)(B.obs_vocab.indexOf(obs_seq.head))).toArray
+
+    viterbi(initial, Array(), obs_seq.tail).toList
+  }
 
   // TODO implement the train function for the HMM
   def train(obs_seq: Observations): Unit = ???
