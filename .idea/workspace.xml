@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd7c54a0-461f-458c-b42d-381006cb8a1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Worksheets/Test.sc" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$7$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$3$$anonfun$apply$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$$lessinit$greater$4$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$$lessinit$greater$4$$anonfun$apply$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Emission.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM$$anonfun$forward$1$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM$$anonfun$forward$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM$$anonfun$printA$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM$$anonfun$printA$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM$$anonfun$printB$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM$$anonfun$printB$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/HMM.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$$lessinit$greater$3$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$$lessinit$greater$3$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/NLP/MarkovModels/Transition.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Worksheets/HMM_usage.sc" afterPath="$PROJECT_DIR$/Worksheets/HMM_usage.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Worksheets/Test.sc" afterPath="$PROJECT_DIR$/Worksheets/Test.sc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/NLP/MarkovModels/HMM.scala" afterPath="$PROJECT_DIR$/src/main/scala/NLP/MarkovModels/HMM.scala" />
     </list>
     <ignored path="NLP.iws" />
